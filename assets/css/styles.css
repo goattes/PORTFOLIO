@@ -16,6 +16,7 @@
   --button-color: hsl(var(--hue-color), 44%, 5%);
   --blob-color: hsl(var(--hue-color), 45%, 12%);
   --big-text: hsl(var(--blb-color), 69%, 50%);
+  --utrpeni-color: 0px 2px 50px rgba(0, 0, 0, 0.9);
 
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -41,6 +42,7 @@
   --button-color: hsl(var(--hue-color), 44%, 5%);
   --blob-color: hsl(var(--hue-color), 44%, 5%);
   --big-text: white;
+  --utrpeni-color: 0px 2px 50px rgba(255, 255, 255, 0.9);
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -252,6 +254,11 @@ img {
   font-weight: var(--font-semi);
   color: white;
 }
+#theme-switch:hover {
+  box-shadow: var(--utrpeni-color);
+  transition: 0.2s;
+  cursor: pointer;
+}
 #theme-switch i{
   font-size: 2.3rem;
 }
@@ -274,7 +281,7 @@ img {
   transition: 0.3s;
 }
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 10px 36px var(--utrpeni);
 }
 
 
