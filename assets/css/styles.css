@@ -9,6 +9,13 @@
   --blb-color: 256;
   --first-color: hsl(var(--blb-color), 69%, 50%);
   --second-color: hsl(var(--hue-color), 45%, 12%);
+  --footer-color: hsl(var(--hue-color), 45%, 12%);
+  --menu-color: #ffffff;
+  --background-color: #ffffff;
+  --work-color: hsl(var(--blb-color), 45%, 12%);
+  --button-color: hsl(var(--hue-color), 44%, 5%);
+  --blob-color: hsl(var(--hue-color), 45%, 12%);
+  --big-text: hsl(var(--blb-color), 69%, 50%);
 
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -23,6 +30,17 @@
 
   --z-back: -10;
   --z-fixed: 100;
+}
+.darkmode{
+  --background-color: hsl(var(--hue-color), 45%, 12%);
+  --first-color: hsl(var(--blb-color), 69%, 50%);
+  --second-color: white;
+  --footer-color: hsl(var(--hue-color), 44%, 5%);
+  --menu-color: hsl(var(--hue-color), 44%, 5%);
+  --work-color: #395193;
+  --button-color: hsl(var(--hue-color), 44%, 5%);
+  --blob-color: hsl(var(--hue-color), 44%, 5%);
+  --big-text: white;
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -47,6 +65,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  background-color: var(--background-color);
 }
 
 h1, h2, p {
@@ -73,7 +92,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: var(--big-text);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -109,7 +128,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--menu-color);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -129,7 +148,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color: var(--menu-color);
     transition: 0.5s;
   }
 }
@@ -180,7 +199,7 @@ img {
 
 .home {
   position: relative;
-  row-gap: 5rem;
+  row-gap: 1rem;
   padding: 4rem 0 5rem;
 }
 .home__data {
@@ -217,13 +236,34 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--second-color);
+  fill: var(--blob-color);
 }
 .home__blob-img {
   width: 360px;
 }
-
-
+#theme-switch{
+  height: 3.7rem;
+  width: 9.1rem;
+  border-radius: 0.5rem;
+  background-color: var(--button-color);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--font-semi);
+  color: white;
+}
+#theme-switch i{
+  font-size: 2.3rem;
+}
+#theme-switch i:last-child{
+  display: none;
+}
+.darkmode #theme-switch i:first-child{
+  display: none;
+}
+.darkmode #theme-switch i:last-child{
+  display: block;
+}
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -273,7 +313,7 @@ img {
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 1px 1px 10px 1px var(--work-color);
 }
 .skills__icon {
   font-size: 2rem;
@@ -334,7 +374,9 @@ img {
   border-radius: 0.5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
+  color: var(--second-color);
   margin-bottom: var(--mb-4);
+  background-color: var(--background-color);
 }
 .contact__button {
   display: block;
@@ -347,7 +389,7 @@ img {
 
 
 .footer {
-  background-color: var(--second-color);
+  background-color: var(--footer-color);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);

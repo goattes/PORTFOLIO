@@ -9,6 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="icon" type="png" href="assets/img/blbec.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <script type="text/javascript" src="assets/js/darkmode.js" defer></script>
         <title>Filip Kovář - Portfolio</title>
     </head>
     <body>
@@ -40,14 +41,13 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Filip</span>.</h1>
-                    <h2 class="type-shit" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">C# Programmer</h2>
-
-                    <a href="#" class="button">Contact</a>
+                    <h2 class="type-shit">C# Programmer</h2>
+                    <button id="theme-switch"><i class="fa-solid fa-moon"></i><i class='bx bx-sun'></i></button>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/goattes" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                 </div>
 
                 <div class="home__img">
@@ -73,7 +73,7 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I am Filip</h2>
+                        <h2 class="about__subtitle">My  Filip</h2>
                         <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
                     </div>                                   
                 </div>
@@ -149,22 +149,22 @@
 
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                        <img src="assets/img/loading.gif" alt="">
                     </a>
                 </div>
             </section>
@@ -177,10 +177,10 @@
                     <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="20a80b08-fdef-4b76-a6a0-a1b692f9fd83">
                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Emailová adresa" class="contact__input" required>
-                        <input type="text" name="subject" placeholder="Předmět" class="contact__input" required>
-                        <textarea name="message" type="text" id="input-message"  cols="0" rows="7"  placeholder="Text" class="contact__input" required></textarea>
-                        <input type="submit" value="Odeslat" class="contact__button button" id="input-submit">
+                        <input type="email" name="email" placeholder="Email address" class="contact__input" required>
+                        <input type="text" name="subject" placeholder="Subject" class="contact__input" required>
+                        <textarea name="message" type="text" id="input-message"  cols="0" rows="7"  placeholder="Message" class="contact__input" required></textarea>
+                        <input type="submit" value="Submit" class="contact__button button" id="input-submit">
                     </form>
                 </div>
             </section>
